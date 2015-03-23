@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.cc.puv.fi/~tka/ajaxia.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Test</title>
+        
+        <script>
+		var x=0;
+		function doAjax() {
+			setInterval(check, 2000);
+		}
+		
+		function check(){
+			x++;
+			document.getElementById("ti").value=x;
+			var myArr="";
+			var url = "http://www.cc.puv.fi/~tka/now.php?readerid=1";
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					myArr = xmlhttp.responseText;
+					document.getElementById("test2").innerHTML =x;
+					document.getElementById("ti").value=myArr;
+				}
+			}
+			xmlhttp.open("GET", url, true);
+			xmlhttp.send();			
+		}
+		
+        </script>
+    <style type="text/css"></style></head> 
+    <body onload="doAjax();">
+	http://www.cc.puv.fi/~tka/ajaxia.html
+	<div id="test2">17</div>
+	<input type="text" name="time" id="ti">
+    
+
+</body></html>

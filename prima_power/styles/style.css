@@ -1,0 +1,58 @@
+body{
+	margin:0px;
+	background:grey;
+	text-align: justify;
+	text-justify: inter-word;
+}
+header{
+	margin:0px;
+	background:grey;
+}
+
+footer{
+	background:#777;
+	text-align: center;
+}
+
+h1 {
+    //font-size: 6em; /* 40px/16=2.5em */
+	text-align:center;
+	font-size:40px;
+	color:orange;
+	margin:0px;
+	margin-bottom:3%;
+}
+h2 {
+	text-align:center;
+}
+
+td.centered{
+	text-align:center;
+}/*
+table.wide{
+	padding:1%;
+	width:100%;
+}*/
+table.centered{
+	width:500px;
+	margin: 10px auto;
+	text-align: left;
+}
+/*
+table.outlined{
+	border: 1px solid #000000;
+	padding:1%;
+	width:100%;
+}
+table.outlined td {
+	border: 1px solid #000000;
+}*/
+/*
+table td{
+	padding:1%;
+}*/
+
+/*
+p{
+	padding-left:10px;
+}*/
